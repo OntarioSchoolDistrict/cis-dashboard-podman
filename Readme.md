@@ -1,12 +1,12 @@
-mkdir /root/CIS
-cd /root/CIS
+`mkdir /root/CIS
+cd /root/CIS`
 
 Download CIS-CAT-Dashboard-v3.3.0-linux.zip into the CIS directory
 
 Create a folder to work in:
-mkdir /root/podman
+`mkdir /root/podman
 cd /root/podman
-vi Dockerfile
+vi Dockerfile'
 	FROM ubuntu:22.04
 
 	RUN echo 'root:root' | chpasswd
