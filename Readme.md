@@ -22,7 +22,7 @@ FROM ubuntu:22.04
 RUN echo 'root:root' | chpasswd
 RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
 RUN apt-get update
-RUN apt-get install -y systemd systemd-sysv dbus dbus-user-session vim sudo unzip mariadb-server-10.6 openjdk-8-jdk-headless
+RUN apt-get install -y systemd systemd-sysv dbus dbus-user-session vim sudo unzip mariadb-server-10.6 openjdk-8-jdk-headless iproute2
 RUN printf "systemctl start systemd-logind" >> /etc/profile
 
 ENTRYPOINT ["/sbin/init"]
