@@ -87,7 +87,7 @@ podman run --pod cis-cat -it --restart unless-stopped --name cis-cat-dashboard -
 ```
 Start the CIS Dashboard.
 ```
-/usr/loca/CCPD/CIS-CAT_Pro_Dashboard start
+/usr/local/CCPD/CIS-CAT_Pro_Dashboard start
 ```
 Disconect from the container with ctrl+P and ctrl+Q
 
